@@ -1,18 +1,22 @@
 ![Design Patterns For Humans](https://cloud.githubusercontent.com/assets/11269635/23065273/1b7e5938-f515-11e6-8dd3-d0d58de6bb9a.png)
 
-***
-
-<p align="center">
-🎉 Ultra-simplified explanation to design patterns! 🎉
-</p>
-<p align="center">
-A topic that can easily make anyone's mind wobble. Here I try to make them stick in to your mind (and maybe mine) by explaining them in the <i>simplest</i> way possible.
-</p>
-
+<p align="center"><b>
+Japanese Edition （日本語版）
+</b></p>
 
 ***
 
-<p align="center"><b> Did you like this guide and want more of the similar content? </b><br>We are releasing <a href="http://hugobots.com">Hugobots</a> soon. Make sure to subscribe!</p>
+<p align="center">
+🎉 超訳！ デザインパターン！ 🎉
+</p>
+<p align="center">
+むずかしいテーマをしっかり覚えられるよう、できるだけ<i>カンタン</i>に説明してみた。
+</p>
+
+
+***
+
+<p align="center"><b> これが気に入って、こういうお役立ち情報をもっと欲しいって思ったなら、 </b><br>[原文](https://github.com/kamranahmedse/design-patterns-for-humans)の作者である Kamran Ahmed たちが <a href="http://hugobots.com">Hugobots</a> ってものをリリースしようとしてるから、そっちもチェックしてくれよな！</p>
 
 ***
 
