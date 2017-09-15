@@ -20,31 +20,35 @@ Japanese Edition （日本語版）
 
 ***
 
-🚀 Introduction
+🚀 はじめに
 =================
 
-Design patterns are solutions to recurring problems; **guidelines on how to tackle certain problems**. They are not classes, packages or libraries that you can plug into your application and wait for the magic to happen. These are, rather, guidelines on how to tackle certain problems in certain situations.
+「デザインパターン」ってのは、起こりうる問題に対して、**どうやったら解決できるかを示してくれる指南書**だ。別に、アプリケーションにくっつけたら気付いたら解決してくれてるライブラリとかそういったものじゃない。あくまで指南書だ。
 
-> Design patterns are solutions to recurring problems; guidelines on how to tackle certain problems
+> 「デザインパターン」ってのは、起こりうる問題に対して、どうやったら解決できるかを示してくれる指南書だ
 
-Wikipedia describes them as
+Wikipedia にはこう書かれている。
 
 > In software engineering, a software design pattern is a general reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code. It is a description or template for how to solve a problem that can be used in many different situations.
 
-⚠️ Be Careful
+日本語版ウィキペディアではこうなっている。
+
+> ソフトウェア開発におけるデザインパターン（型紙（かたがみ）または設計パターン、英: design pattern）とは、過去のソフトウェア設計者が発見し編み出した設計ノウハウを蓄積し、名前をつけ、再利用しやすいように特定の規約に従ってカタログ化したものである。
+
+⚠️ 注意
 -----------------
-- Design patterns are not a silver bullet to all your problems.
-- Do not try to force them; bad things are supposed to happen, if done so. Keep in mind that design patterns are solutions **to** problems, not solutions **finding** problems; so don't overthink.
-- If used in a correct place in a correct manner, they can prove to be a savior; or else they can result in a horrible mess of a code.
+- デザインパターンは、すべての問題を解決してくれる銀の弾丸ではない
+- デザインパターンを強制してはいけない。デザインパターンは、問題を**解決するための手法**であって、問題を**あぶりだすための手法**じゃない。デザインパターンを使うことを考えすぎて、問題を起こさないように
+- 正しい場所で正しく使用すれば、デザインパターンは光り輝く救世主となる。だが、使い方を誤ればソースコードに混沌をもたらす者となるだろう……
 
-> Also note that the code samples below are in PHP-7, however this shouldn't stop you because the concepts are same anyways. Plus the **support for other languages is underway**.
+> この先で扱うサンプルコードが PHP 7 で書かれているのも1つの注意点だが、とはいえ、基本的な考えは同じなので PHP だからと敬遠しないでほしい。いちおう**他のプログラミング言語でのサンプルも進行中**だ。
 
-Types of Design Patterns
+デザインパターンの種類
 -----------------
 
-* [Creational](#creational-design-patterns)
-* [Structural](#structural-design-patterns)
-* [Behavioral](#behavioral-design-patterns)
+* [Creational](#creational-design-patterns) : 作成のデザインパターン
+* [Structural](#structural-design-patterns) : 構造のデザインパターン
+* [Behavioral](#behavioral-design-patterns) : 挙動のデザインパターン
 
 Creational Design Patterns
 ==========================
