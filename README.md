@@ -16,7 +16,7 @@ Japanese Edition （日本語版）
 
 ***
 
-<p align="center"><b> これが気に入って、こういうお役立ち情報をもっと欲しいって思ったなら、 </b><br><a href="https://github.com/kamranahmedse/design-patterns-for-humans">原文</a>の作者である Kamran Ahmed たちが <a href="http://hugobots.com">Hugobots</a> ってものをリリースしようとしてるから、そっちもチェックしてくれよな！</p>
+<p align="center"><b> これが気に入って、こういうお役立ち情報をもっと欲しいって思ったなら、 </b><br><a href="https://github.com/kamranahmedse/design-patterns-for-humans">原文</a>の作者である Kamran Ahmed たちが <br><a href="http://hugobots.com">Hugobots</a> ってものをリリースしようとしてるから、そっちもチェックしてくれよな！</p>
 
 ***
 
