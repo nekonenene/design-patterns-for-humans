@@ -36,11 +36,11 @@ Wikipedia にはこう書かれている。
 ⚠️ 注意
 -----------------
 - デザインパターンは、すべての問題を解決してくれる銀の弾丸ではない
-- デザインパターンを強制してはいけない。悪いことが起こる
-- デザインパターンは問題を**解決する手法**であって、問題を**探す手法**じゃない。深く考えすぎるな
+- デザインパターンを強制してはいけない。良くないことが起こる
+- デザインパターンは問題を**解決する手法**であって、問題を**見つけてくる手法**じゃない。あまり考えすぎるな
 - 正しい場所で正しく使用すれば、デザインパターンは光り輝く救世主となる。だが、使い方を誤ればソースコードに混沌をもたらす者となるだろう……
 
-> この先で扱うサンプルコードは PHP 7 で書かれているが、基本的な考えは同じなので敬遠しないでほしい。
+> この先で扱うサンプルコードは PHP 7 で書かれているが、根本的な考えは同じなので敬遠しないでほしい。
 
 デザインパターンの種類
 -----------------
@@ -52,10 +52,14 @@ Wikipedia にはこう書かれている。
 Creational Design Patterns
 ==========================
 
-In plain words
-> Creational patterns are focused towards how to instantiate an object or group of related objects.
+**（作成のデザインパターン）**
 
-Wikipedia says
+カンタンに言うと
+
+> Creational patterns は、オブジェクトのインスタンス化もしくは関連してるオブジェクトのグループ化に着目したもの
+
+Wikipedia にはこうある。
+
 > In software engineering, creational design patterns are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or added complexity to the design. Creational design patterns solve this problem by somehow controlling this object creation.
 
  * [Simple Factory](#-simple-factory)
@@ -67,18 +71,23 @@ Wikipedia says
 
 🏠 Simple Factory
 --------------
-Real world example
-> Consider, you are building a house and you need doors. You can either put on your carpenter clothes, bring some wood, glue, nails and all the tools required to build the door and start building it in your house or you can simply call the factory and get the built door delivered to you so that you don't need to learn anything about the door making or to deal with the mess that comes with making it.
 
-In plain words
-> Simple factory simply generates an instance for client without exposing any instantiation logic to the client
+現実世界の例
 
-Wikipedia says
+> 家を建てていてドアが必要としよう。あなたは選ぶことが出来る。作業着を着て、木・ボンド・釘などの必要なものを全部用意してドアを作るか、シンプルに工場に電話して完成済みのドアを持ってきてもらうか。後者なら、ドアの組み立て方を学ばなくていいし、組み立てによって周りが散らかることもない。
+
+要約
+
+> Simple factory は、インスタンスがどのように作成されるかを相手に見せず、インスタンスを作成して相手に渡す手法
+
+Wikipedia にはこうある。
+
 > In object-oriented programming (OOP), a factory is an object for creating other objects – formally a factory is a function or method that returns objects of a varying prototype or class from some method call, which is assumed to be "new".
 
-**Programmatic Example**
+**プログラム例**
 
-First of all we have a door interface and the implementation
+まずは Door インターフェイスと、インターフェイスの実装について
+
 ```php
 interface Door
 {
@@ -108,7 +117,9 @@ class WoodenDoor implements Door
     }
 }
 ```
-Then we have our door factory that makes the door and returns it
+
+次に Door Factory を作って、ドアを渡してくるようにする
+
 ```php
 class DoorFactory
 {
@@ -118,7 +129,9 @@ class DoorFactory
     }
 }
 ```
-And then it can be used as
+
+これでこんなふうに使える
+
 ```php
 // Make me a door of 100x200
 $door = DoorFactory::makeDoor(100, 200);
@@ -130,9 +143,9 @@ echo 'Height: ' . $door->getHeight();
 $door2 = DoorFactory::makeDoor(50, 100);
 ```
 
-**When to Use?**
+**いつ使うの？**
 
-When creating an object is not just a few assignments and involves some logic, it makes sense to put it in a dedicated factory instead of repeating the same code everywhere.
+オブジェクトの生成が何度もおこなわれていて、なおかつ生成のときに処理もいくらか引き起こしたいって場合は、オブジェクトの生成を Factory に任せればコードがスッキリする
 
 🏭 Factory Method
 --------------
