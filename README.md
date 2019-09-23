@@ -16,7 +16,7 @@ Japanese Edition （日本語版）
 
 ***
 
-<sub><a href="https://github.com/kamranahmedse/design-patterns-for-humans">原文</a>の作者である Kamran Ahmed の[ブログ](http://kamranahmed.info)や [Twitter](https://twitter.com/kamranahmedse)をぜひチェックしてみてくれ。</sub>
+<sub><a href="https://github.com/kamranahmedse/design-patterns-for-humans">原文</a>の作者である Kamran Ahmed の [ブログ](http://kamranahmed.info) や [Twitter](https://twitter.com/kamranahmedse) をぜひチェックしてみてくれ。</sub>
 
 はじめに
 =================
