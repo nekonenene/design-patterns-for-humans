@@ -21,7 +21,7 @@ Japanese Edition （日本語版）
 はじめに
 =================
 
-「デザインパターン」ってのは、起こりうる問題に対して、**どうやったら解決できるかを示してくれる指南書**だ。製作中のアプリケーションに追加したら魔法のように問題を解決してくれてるライブラリとかそういったものじゃない。あくまで指南書だ。
+「デザインパターン」ってのは、起こりうる問題に対して、**どうやったら解決できるかを示してくれる指南書**だ。製作中のアプリケーションに追加したら魔法のように問題を解決してくれているライブラリとかそういったものじゃない。あくまで指南書だ。
 
 > 「デザインパターン」ってのは、起こりうる問題に対して、どうやったら解決できるかを示してくれる指南書だ
 
@@ -36,7 +36,7 @@ Wikipedia にはこう書かれている。
 ⚠️ 注意
 -----------------
 - デザインパターンは、すべての問題を解決してくれる銀の弾丸ではない
-- デザインパターンを強制してはいけない。良くないことが起こる
+- デザインパターンを強制してはいけない。そんなことしたら悪いことが起きる
 - デザインパターンは問題を**解決する手法**であって、問題を**見つけてくる手法**じゃない。あまり考えすぎるな
 - 正しい場所で正しく使用すれば、デザインパターンは光り輝く救世主となる。だが、使い方を誤ればソースコードに混沌をもたらす者となるだろう……
 
@@ -592,10 +592,16 @@ var_dump($president1 === $president2); // true
 
 Structural Design Patterns
 ==========================
-In plain words
-> Structural patterns are mostly concerned with object composition or in other words how the entities can use each other. Or yet another explanation would be, they help in answering "How to build a software component?"
 
-Wikipedia says
+**（構造のデザインパターン）**
+
+カンタンに言うと
+
+> Structural patterns は、オブジェクトの構成（どうやってエンティティが相互に使用できる状態にできるか）について考えるものだ。
+> 他の言い方をするなら、「ソフトウェアコンポーネントってどう作るの？」に対するアンサーがこれだ。
+
+Wikipedia にはこうある。
+
 > In software engineering, structural design patterns are design patterns that ease the design by identifying a simple way to realize relationships between entities.
 
  * [Adapter](#-adapter)
@@ -1290,10 +1296,15 @@ Yet another example would be some sort of data-mapper implementation. For exampl
 Behavioral Design Patterns
 ==========================
 
-In plain words
-> It is concerned with assignment of responsibilities between the objects. What makes them different from structural patterns is they don't just specify the structure but also outline the patterns for message passing/communication between them. Or in other words, they assist in answering "How to run a behavior in software component?"
+**（挙動のデザインパターン）**
 
-Wikipedia says
+カンタンに言うと
+
+> Behavioral patterns は、各オブジェクトの責務についてどうするか考えたものだ。Structural patterns とどう違うかって言うと、こっちは構造を定義するだけでなくて、メッセージの受け渡し（通信）についてもある程度決めるところだ。
+> 言うなれば、「ソフトウェアコンポーネントの挙動をどうやって実行させるの？」に対する答えがこれだ。
+
+Wikipedia にはこうある。
+
 > In software engineering, behavioral design patterns are design patterns that identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication.
 
 * [Chain of Responsibility](#-chain-of-responsibility)
